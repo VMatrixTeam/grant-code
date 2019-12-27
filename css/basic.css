@@ -1,0 +1,88 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.layer-header {
+  background-color: rgb(112, 191, 240);
+  height: 13.6rem;
+  box-shadow: 0 0 3rem rgb(112, 191, 240);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3.6rem;
+  color: white;
+  margin-left: 1em;
+}
+
+.layer-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-grant-code {
+  position: relative;
+  height: 48rem;
+  margin-top: 5rem;
+}
+
+.dashboard {
+  position: absolute;
+  width: 48rem;
+  height: 48rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.grant-code {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(74, 166, 234);
+  font-size: 7.2rem;
+  white-space: nowrap;
+}
+
+.container-expire-time {
+  font-size: 4.8rem;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.expire-time-hint {
+  color: #7f7f7f;
+}
+
+.expire-time-value {
+  color: rgb(74, 166, 234);
+}
+
+.secret-hint {
+  width: 100%;
+  text-align: center;
+  color: #7f7f7f;
+  display: inline-block;
+  font-size: 2.8rem;
+  margin-bottom: 6em;
+}

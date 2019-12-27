@@ -1,0 +1,40 @@
+<html lang="cmn-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <title>Matrix Exam 实时授权码生成系统</title>
+    <link href="./css/screen-adapt.css" rel="stylesheet" type="text/css" />
+    <link href="./css/basic.css" rel="stylesheet" type="text/css" />
+    <script src="./vendors/otplib/12.0.0/preset-browser/buffer.js"></script>
+    <script src="./vendors/otplib/12.0.0/preset-browser/index.js"></script>
+    <script src="./js/constants.js"></script>
+    <script src="./js/grant-code.js"></script>
+    <script src="./js/colors.js"></script>
+    <script src="./js/render-dashboard.js"></script>
+    <script src="./js/set-timer.js"></script>
+    <script>
+      window.onload = window.setTimer;
+    </script>
+  </head>
+  <body>
+    <div class="layer-header">
+      <img class="logo" alt="logo" title="Matrix Exam 实时授权码生成系统" src="./images/logo.png"/>
+      <span class="title">Matrix Exam 实时授权码生成系统</span>
+    </div>
+    <div class="layer-body">
+      <div class="container-grant-code">
+        <canvas class="dashboard" id="time-dashboard" width="480" height="480"></canvas>
+        <span class="grant-code" id="grant-code"></span>
+      </div>
+      <div class="container-expire-time">
+        <span class="expire-time-hint">将于</span>
+        <span class="expire-time-value" id="expire-time-minute"></span>
+        <span class="expire-time-hint">分</span>
+        <span class="expire-time-value" id="expire-time-second"></span>
+        <span class="expire-time-hint">秒后更新</span>
+      </div>
+    </div>
+    <div class="layer-footer">
+      <span class="secret-hint">*提示：授权码涉及考试保密工作，请勿告诉他人。</span>
+    </div>
+  </body>
+</html>

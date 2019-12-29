@@ -27,7 +27,7 @@ window.renderDashboard = function(restTimeProp) {
   ctx.fill();
   ctx.closePath();
   var strokeColor = { h: 202, s: 0.79, l: 0.75 };
-  var endLightness = 0.4;
+  var endLightness = 0.3;
   var startLightness = 0.75;
   for (var i = 0; i < Math.ceil(restTimeProp*360); i++) {
     ctx.beginPath();

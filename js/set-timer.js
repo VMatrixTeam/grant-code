@@ -22,10 +22,7 @@ window.setTimer = function() {
       });
       window.setInterval(function() {
         count++;
-        if (count === window.constants.MAX_EXPIRE_TIME()) {
-          count = 0;
-          window.refreshGrantCode();
-        }
+        count %= window.constants.MAX_EXPIRE_TIME();
         window.updateExpireTime(count);
       }, 1000);
     }

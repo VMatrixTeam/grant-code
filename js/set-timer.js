@@ -8,6 +8,7 @@ window.updateExpireTime = function(count) {
 window.setTimer = function() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', window.location, true);
+  xhr.setRequestHeader('Cache-Control', 'no-cache');
   xhr.onprogress = function() {
     if (window.timeOffset === void 0) {
       var maxExpireTimeInMs = window.constants.MAX_EXPIRE_TIME() * 1000;
